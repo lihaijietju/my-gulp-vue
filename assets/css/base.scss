@@ -1,0 +1,162 @@
+
+html,body,div,a,i,span,ul,li,ol,dl,dd,dt,form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article{
+    padding: 0;
+    border:0;
+    font-size:14px;
+    font-style: normal;
+    vertical-align: baseline;
+}
+html,body,div,span,a,ul,li,ol,dl,dd,dt{
+    margin: 0;
+}
+body, input, textarea, keygen, select, button{
+    line-height: 1;
+    font-family: "Heiti SC", sans-serif;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    -moz-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ol,ul{
+    list-style: none;
+}
+
+button {
+    border-style: none;
+}
+body {
+    background: #F6F6F6;
+    color: #000;
+    display: block !important;
+    position:absolute;
+    width:100%;
+    height:100%;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+a, a.hover, a:active, a:link, a:visited {
+    color: #333;
+    text-decoration: none;
+}
+@font-face {
+    font-family: icon;
+    src: url('font/fontello.woff?ver=2015081401') format("woff"),url('font/fontello.ttf?ver=2015081401');
+}
+.icon{
+    font-family: icon;
+    font-size: 100%;
+}
+// 隐藏滚动条
+::-webkit-scrollbar{
+    display: none;
+}
+#app{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    word-wrap: normal;
+}
+.hidden, .hide {
+    display: none!important;
+}
+.retina-1px-border-bottom {
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0) 50%,#D8D8D8 50%);
+    background-position: bottom;
+}
+.retina-1px-border-bottom,
+.retina-1px-border-top {
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+}
+//特价
+.icon-sale {
+    width: 30px;
+    margin-left: 7px;
+}
+.page{
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.kl-header{
+    background: $mainColor;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $headerHeight;
+    color: #fff;
+    z-index: 1000;
+    margin-bottom: -$headerHeight;
+    position: relative;
+    font-size: 18px;
+    line-height: $headerHeight;
+    text-align: center;
+}
+.kl-header-back{
+    position: absolute;
+    left: 10px;
+    img {
+        vertical-align: middle;
+    }
+}
+//  页面主体内容
+.page-content{
+    flex: 1;
+    margin-top:$headerHeight;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: #EEEFF0;
+    -webkit-overflow-scrolling: touch;
+    font-size: 14px;
+}
+.normal-footer{
+    position: relative;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    height: $footerHeight;
+    background: #FFF;
+    z-index: 10000;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid $mainColor;
+}
+.normal-footer-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #FA553C;
+    padding: 0 25px;
+    height: $footerHeight;
+    line-height: $footerHeight;
+    font-size: 20px;
+    color: #fff;
+}
